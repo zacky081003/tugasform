@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+</head>
+
+<body> <br>
+    <div class="container-md">
+
+       
+
+        <nav class="navbar bg-dark-subtle" data-bs-theme="white=">
+            <div class="container-fluid">
+              <a class="navbar-brand ">Form Biodata</a>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+            
+          </nav>
+
+        <div action="login.php" method="post">
+
+            <div class="shadow-sm p-3 mb-5 bg-body rounded">
+                <label for="" class="form-label">NIM</label>
+                <input class="form-control" required type="text" name="txtnim" id="">
+            </div>
+
+            <div class="shadow-sm p-3 mb-5 bg-body rounded">
+                <label for="">Nama</label>
+                <input class="form-control" required type="text" name="txtnim" id="">
+            </div>
+
+            <div class="mb-3">
+                <label for="">Jenis Kelamin</label><br>
+                <input class="form-check-input" type="radio" name="rbjk" value="L" id=""> Laki - Laki
+                <input type="radio" name="rbjk" value="P" id=""> Perempuan
+            </div><br>
+
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Jurusan</option>
+                <option value="1">Komputer </option>
+                <option value="2">Manajemen</option>
+                <option value="3">ilmu hukum</option>
+              </select><br>
+
+            <div>
+                <label for="">Hobby</label><br> 
+                <input type="radio" name="rbjurusan" value="SI" id=""> Komputer
+                <input type="radio" name="rbjurusan" value="RPL" id=""> Musik
+                <input type="radio" name="rbjurusan" value="RPL" id=""> Olahraga
+                <input type="radio" name="rbjurusan" value="RPL" id=""> Traveling
+                <br>
+                <br>
+            </div>
+
+           
+           
+                <div class="mb-2">
+                <label for="">Catatan</label>
+                <textarea class="form-control" required name="txtalamat" id="" cols="" rows="3"></textarea>
+            </div><br>
+
+            
+        
+            <div>
+                <label for="file">Foto</label><br>
+                <input type="file" id="file" name="file">
+                
+            </div><br>
+            
+
+            
+            
+            
+            <div class="shadow p-3 mb-5 bg-body rounded">
+                <input type="email" class="form-control" id="floatingInput" placeholder="">
+                <label for="floatingInput">Email</label>
+              </div>
+              <div class="shadow p-3 mb-5 bg-body rounded">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="">
+                <label for="floatingPassword">Password</label>
+              </div>
+            
+            <input class="btn btn-primary" type="submit" value="Simpan">
+            <input class="btn btn-secondary" type="reset" value="Reset">
+            <input class="btn btn-danger" type="submit" value="Peringatan">
+        </form>
+    </div>
+</body>
+
+</html>
